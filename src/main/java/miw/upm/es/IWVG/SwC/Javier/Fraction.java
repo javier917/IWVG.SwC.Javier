@@ -28,4 +28,8 @@ public class Fraction {
         return denominator;
     }
     
+    public boolean mayor(Fraction f){
+    	return (this.getNumerator()/this.getDenominator() > f.getNumerator()/f.getDenominator());
+    }
+    
 }
