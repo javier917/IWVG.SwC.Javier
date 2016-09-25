@@ -29,7 +29,7 @@ public class Fraction {
     }
     
     public boolean mayor(Fraction f){
-    	return (this.getNumerator()/this.getDenominator() > f.getNumerator()/f.getDenominator());
+    	return ((double)this.getNumerator()/(double)this.getDenominator() > (double)f.getNumerator()/(double)f.getDenominator());
     }
     
     public boolean isEquivalente(Fraction f) {
@@ -37,3 +37,4 @@ public class Fraction {
     }
     
 }
+
