@@ -1,6 +1,7 @@
 package miw.upm.es.IWVG.SwC.Javier;
 
 
+
 public class Fraction {
     
     private int numerator;
@@ -36,5 +37,13 @@ public class Fraction {
         return (this.numerator*f.getDenominator()==this.denominator*f.getNumerator());
     }
     
+    public Fraction suma (Fraction f) {
+        if (this.denominator != f.getDenominator()) {
+            return new Fraction(f.getDenominator() * this.numerator + this.denominator * f.getNumerator(),
+                    this.denominator * f.getDenominator());
+        } else {
+            return new Fraction(this.numerator + f.getNumerator(), this.denominator);
+        }
+    }
 }
 

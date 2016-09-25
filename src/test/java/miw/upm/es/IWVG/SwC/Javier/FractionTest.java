@@ -7,6 +7,8 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
+
+
 public class FractionTest {
     private Fraction ft;
 
@@ -52,5 +54,12 @@ public class FractionTest {
 
         assertTrue(ft.isEquivalente(f2));
         assertFalse(ft.isEquivalente(f3));
+    }
+    
+    @Test
+    public void testSuma() {
+        Fraction f = ft.suma(new Fraction(3, 4));
+        assertEquals(5, f.getNumerator());
+        assertEquals(4, f.getDenominator());
     }
 }
