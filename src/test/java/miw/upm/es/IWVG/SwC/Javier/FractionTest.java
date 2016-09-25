@@ -31,13 +31,15 @@ public class FractionTest {
 		assertEquals(0.5, ft.decimal(), 10e-5);
 	}
 	
+	@Test
 	public void testMayorFalse(){
 		Fraction f2 = new Fraction(3,2);
 		assertFalse(ft.mayor(f2));
 	}
 	
+	@Test
 	public void testMayorTrue(){
-		Fraction f2 = new Fraction(1,3);
+		Fraction f2 = new Fraction(1,4);
 		assertTrue(ft.mayor(f2));
 	}
 }
