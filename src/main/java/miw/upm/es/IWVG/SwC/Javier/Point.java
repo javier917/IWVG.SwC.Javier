@@ -38,9 +38,19 @@ public class Point {
         return this.y;
     }
 
+    public void changeX(int x) {
+        this.x=x;
+    }
+
+    public void changeY(int y) {
+    	 this.y=y;
+    }
+
     @Override
     public String toString() {
         return "Point[" + x + "," + y + "]";
     }
+    
+   
     
 }

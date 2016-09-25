@@ -54,5 +54,18 @@ public class PointTest {
     public void testToString(){
     	assertTrue(pt.toString().equals("Point[2,3]"));
     }
+    
+    @Test
+    public void testChangeX(){
+    	this.pt.changeX(4);
+    	assertEquals(4, pt.getX());
+    }
+    
+    @Test
+    public void testChengeY(){
+    	this.pt.changeY(1);
+    	assertEquals(1, pt.getY());
+    }
+
 
 }
