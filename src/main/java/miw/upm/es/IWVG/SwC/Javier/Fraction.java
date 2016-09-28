@@ -36,13 +36,14 @@ public class Fraction {
         return (this.numerator*f.getDenominator()==this.denominator*f.getNumerator());
     }
     
-    public int suma(Fraction f) {
+    public void suma(Fraction f) {
         if (this.denominator != f.getDenominator()) {
-            return ((this.numerator= f.getDenominator() * this.numerator + this.denominator * f.getNumerator())/
-            		(this.denominator= this.denominator * f.getDenominator()));
+              this.numerator= f.getDenominator() * this.numerator + this.denominator * f.getNumerator();
+              this.denominator= this.denominator * f.getDenominator();
              
         } else {
-            return ((this.numerator = this.numerator + f.getNumerator())/ this.denominator);
+              this.numerator = this.numerator + f.getNumerator();
+              this.denominator = f.getDenominator();
         }
 
     }
