@@ -58,19 +58,21 @@ public class FractionTest {
     
     @Test
     public void testSumaDenomIgual() {
-        Fraction f = ft.suma(new Fraction(5, 4));
-               
-        assertEquals(7, f.getNumerator());
-        assertEquals(4, f.getDenominator());
-        
-    }
+       
+        this.ft.suma(new Fraction(5, 4));
+        assertEquals(7, ft.getNumerator());
+        assertEquals(4, ft.getDenominator());
+
+      }    
+   
     @Test
     public void testSumaDenomDiferente() {
-      
-        Fraction f2 = ft.suma(new Fraction(7, 5));
-        
-        assertEquals(38, f2.getNumerator());
-        assertEquals(20, f2.getDenominator());
-    }
+       
+        this.ft.suma(new Fraction(4, 5));
+        assertEquals(26, ft.getNumerator());
+        assertEquals(20, ft.getDenominator());
+
+      } 
+  
 
 }
