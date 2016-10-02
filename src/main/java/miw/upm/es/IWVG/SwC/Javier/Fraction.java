@@ -28,4 +28,24 @@ public class Fraction {
         return denominator;
     }
     
+    public boolean mayor(Fraction f){
+    	return ((double)this.getNumerator()/(double)this.getDenominator() > (double)f.getNumerator()/(double)f.getDenominator());
+    }
+    
+    public boolean isEquivalente(Fraction f) {
+        return (this.numerator*f.getDenominator()==this.denominator*f.getNumerator());
+    }
+    
+    public void suma(Fraction f) {
+        if (this.denominator != f.getDenominator()) {
+              this.numerator= f.getDenominator() * this.numerator + this.denominator * f.getNumerator();
+              this.denominator= this.denominator * f.getDenominator();
+             
+        } else {
+              this.numerator = this.numerator + f.getNumerator();
+              this.denominator = f.getDenominator();
+        }
+
+    }
 }
+

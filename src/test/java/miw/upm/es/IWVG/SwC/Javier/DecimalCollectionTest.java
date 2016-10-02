@@ -2,6 +2,7 @@ package miw.upm.es.IWVG.SwC.Javier;
 
 
 import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -40,6 +41,15 @@ public class DecimalCollectionTest {
     @Test
     public void testHigher() {
         assertEquals(3, this.dc.higher(), 10e-5);
+    }
+    
+    @Test
+    public void testMultiplicar() {
+    	this.dc.multiplicar(2.0);
+    	assertEquals(4, this.dc.getCollection().get(0), 10e-5);
+    	assertEquals(-2, this.dc.getCollection().get(1), 10e-5);
+    	assertEquals(6, this.dc.getCollection().get(2), 10e-5);
+    	assertEquals(4, this.dc.getCollection().get(3), 10e-5);
     }
 
 }

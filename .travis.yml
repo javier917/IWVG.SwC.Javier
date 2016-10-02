@@ -13,4 +13,4 @@ notifications:
     recipients:
       - javier.ruiz.cala@gmail.com
       
-script: mvn verify
+script: mvn test

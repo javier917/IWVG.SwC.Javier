@@ -36,5 +36,15 @@ public class DecimalCollection {
         }
         return higher;
     }
+    
+    public void multiplicar(double factor){
+        for (int i = 0; i < this.collection.size(); i++) {
+            this.collection.set(i,this.collection.get(i)*factor);
+        }
+    }
+    
+    public List<Double> getCollection(){
+    	return this.collection;
+    }
 
 }
